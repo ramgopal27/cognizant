@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Local Community Portal</title>
+  </head>
+  <body>
+    <form onsubmit="showConfirmation(); return false;">
+      <label
+        >Name:
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your name"
+          autofocus /></label
+      ><br />
+      <label
+        >Email:
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your email" /></label
+      ><br />
+      <label>Date: <input type="date" name="eventDate" /></label><br />
+      <label
+        >Event Type:
+        <select name="eventType" id="eventType">
+          <option value="music">Music</option>
+          <option value="art">Art</option>
+          <option value="tech">Tech</option>
+        </select> </label
+      ><br />
+      <label>Message: <textarea placeholder="Any comments..."></textarea></label
+      ><br />
+      <button type="submit">Register</button>
+      <output id="confirmation"></output>
+    </form>
+
+    <script>
+      function showConfirmation() {
+        document.getElementById("confirmation").value =
+          "Thank you for registering!";
+      }
+    </script>
+
+    <style>
+      form {
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+    </style>
+  </body>
+</html>
