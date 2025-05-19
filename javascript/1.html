@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Local Community Event Portal</title>
+    <link rel="stylesheet" href="1.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Community Event Portal</h1>
+
+    <div>
+      <input type="text" id="searchBox" placeholder="Search events..." />
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Music">Music</option>
+        <option value="Art">Art</option>
+        <option value="Tech">Tech</option>
+      </select>
+    </div>
+
+    <div id="eventContainer"></div>
+
+    <form id="regForm">
+      <h2>Register for an Event</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="event" required>
+        <option value="Music Fest">Music Fest</option>
+        <option value="Art Expo">Art Expo</option>
+        <option value="Tech Talk">Tech Talk</option>
+      </select>
+      <button type="submit" id="registerBtn">Register</button>
+    </form>
+
+    <div id="status"></div>
+    <div id="loading" style="display: none">Loading...</div>
+
+    <script src="1.js"></script>
+  </body>
+</html>
