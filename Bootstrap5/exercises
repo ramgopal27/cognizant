@@ -1,0 +1,239 @@
+<!-- Exercise 1.1: Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Exercise 1.2: Local Bootstrap setup -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Exercise 2.1: Bootstrap directory explanation -->
+<!--
+CSS folder: Contains compiled Bootstrap CSS files (e.g., bootstrap.min.css) for styling.
+JS folder: Contains Bootstrap JS plugins (e.g., bootstrap.bundle.min.js) with Popper.js.
+Icons folder (if included): Contains SVG or font files for Bootstrap Icons.
+-->
+
+<!-- Exercise 2.2: JavaScript plugin via bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Exercise 3.1: Responsive Grid -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4">Column 1</div>
+    <div class="col-12 col-sm-6 col-md-4">Column 2</div>
+    <div class="col-12 col-sm-6 col-md-4">Column 3</div>
+  </div>
+</div>
+
+<!-- Exercise 3.2: Container, Row, Col -->
+<div class="container">
+  <div class="row">
+    <div class="col">A</div>
+    <div class="col">B</div>
+    <div class="col">C</div>
+  </div>
+</div>
+
+<!-- Exercise 4.1: Two-column layout -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">Sidebar</div>
+    <div class="col-md-9">Main content</div>
+  </div>
+</div>
+
+<!-- Exercise 4.2: Four equal columns -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">One</div>
+    <div class="col-sm-3">Two</div>
+    <div class="col-sm-3">Three</div>
+    <div class="col-sm-3">Four</div>
+  </div>
+</div>
+
+<!-- Exercise 5.1: Centering content -->
+<div class="d-flex justify-content-center align-items-center" style="height:200px">
+  <div>Centered</div>
+</div>
+
+<!-- Exercise 5.2: Reorder columns -->
+<div class="row">
+  <div class="col-md-6 order-md-2">Second</div>
+  <div class="col-md-6 order-md-1">First</div>
+</div>
+
+<!-- Exercise 6.1: Flexbox navbar -->
+<nav class="d-flex flex-column flex-md-row bg-light p-3">
+  <a class="me-md-auto p-2" href="#">Logo</a>
+  <a class="p-2" href="#">Home</a>
+  <a class="p-2" href="#">Contact</a>
+</nav>
+
+<!-- Exercise 6.2: Card with justify & align -->
+<div class="card d-flex flex-row justify-content-between align-items-center p-3">
+  <span>Left</span>
+  <span>Right</span>
+</div>
+
+<!-- Exercise 7.1: Typography -->
+<div class="container">
+  <h1 class="display-1">Heading</h1>
+  <p class="lead text-muted fw-bold">Lead</p>
+</div>
+
+<!-- Exercise 7.2: Text transformation -->
+<p class="text-uppercase">upper</p>
+<p class="text-lowercase">LOWER</p>
+<p class="text-capitalize">capitalize this</p>
+
+<!-- Exercise 8.1: Registration form -->
+<form>
+  <div class="mb-3">
+    <input type="text" class="form-control" placeholder="Name">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="agree">
+    <label class="form-check-label" for="agree">Agree</label>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+
+<!-- Exercise 8.2: Floating login form -->
+<div class="form-floating">
+  <input type="email" class="form-control" id="email" placeholder="Email">
+  <label for="email">Email address</label>
+</div>
+
+<!-- Exercise 9.1: Buttons -->
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-outline-success">Outline</button>
+
+<!-- Exercise 9.2: Button group -->
+<div class="btn-group" role="group">
+  <input type="checkbox" class="btn-check" id="btncheck1">
+  <label class="btn btn-outline-primary" for="btncheck1">Check</label>
+</div>
+
+<!-- Exercise 10.1: Responsive navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Exercise 10.2: Tabs & Pills -->
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+</ul>
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link active" href="#">Pill 1</a></li>
+</ul>
+
+<!-- Exercise 11.1: Profile card -->
+<div class="card" style="width: 18rem;">
+  <img src="img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Name</h5>
+    <p class="card-text">Profile</p>
+  </div>
+</div>
+
+<!-- Exercise 11.2: Media object -->
+<div class="d-flex">
+  <img src="img.jpg" class="me-3" style="width:64px;">
+  <div>
+    <h5>Media title</h5>
+    <p>Content</p>
+  </div>
+</div>
+
+<!-- Exercise 12.1: Spacing -->
+<div class="m-3 p-2 bg-light">Spacing applied</div>
+
+<!-- Exercise 12.2: Pricing layout -->
+<div class="p-5 my-3 bg-white border">Pricing Box</div>
+
+<!-- Exercise 13.1: Dashboard colors -->
+<div class="bg-primary text-white p-3">Primary</div>
+<div class="bg-warning text-dark p-3">Warning</div>
+
+<!-- Exercise 13.2: Gradient background -->
+<div class="bg-dark bg-gradient text-white p-3">Gradient</div>
+
+<!-- Exercise 14.1: Display classes -->
+<div class="d-none d-md-block">Visible md+</div>
+<div class="d-lg-flex">Flex lg+</div>
+
+<!-- Exercise 14.2: Tablet sidebar -->
+<div class="d-none d-md-block bg-light p-3">Sidebar</div>
+
+<!-- Exercise 15.1: Borders -->
+<img src="img.jpg" class="border border-primary border-3 rounded-circle" style="width:100px;">
+
+<!-- Exercise 15.2: Card shadow -->
+<div class="card shadow-lg rounded-pill p-3">Card with shadow</div>
+
+<!-- Exercise 16.1: Fixed footer -->
+<footer class="bg-dark text-white position-fixed bottom-0 w-100 text-center">Footer</footer>
+
+<!-- Exercise 16.2: Badge on image -->
+<div class="position-relative d-inline-block">
+  <img src="img.jpg" style="width:100px;">
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">New</span>
+</div>
+
+<!-- Exercise 17.1: Footer with icons -->
+<footer class="text-center">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+</footer>
+
+<!-- Exercise 17.2: Icon-only buttons -->
+<button class="btn btn-outline-primary"><i class="bi bi-house"></i></button>
+
+<!-- Exercise 18.1: Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Open</button>
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Modal</h5></div>
+      <div class="modal-body">Modal content</div>
+    </div>
+  </div>
+</div>
+
+<!-- Exercise 18.2: Accordion -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Item 1</button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">Content</div>
+    </div>
+  </div>
+</div>
+
+<!-- Exercise 19.1 & 19.2: Sass setup and customization -->
+/* Requires npm, sass setup, and Bootstrap source files */
+// _variables.scss
+$primary: #6610f2;
+$border-radius: .3rem;
+
+// Compile with sass and import to your main SCSS file
+@import "bootstrap/scss/bootstrap";
+
