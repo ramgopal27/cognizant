@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debugging Practice Page</title>
+    <style>
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      .box {
+        background-color: #eee;
+        padding: 20px;
+        float: left;
+        width: 60%;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Debugging Demo</h1>
+      <div class="box">
+        <p>Click the button below to calculate the result:</p>
+        <input type="number" id="num1" placeholder="Enter a number" />
+        <input type="number" id="num2" placeholder="Enter another number" />
+        <button class="button" onclick="calculate()">Calculate</button>
+        <p>Result: <span id="result">?</span></p>
+      </div>
+    </div>
+
+    <script>
+      function calculate() {
+        const a = document.getElementById("num1").value;
+        const b = document.getElementById("num2").value;
+        const result = a + b;
+
+        console.log("a:", a, "b:", b, "result:", result);
+
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>

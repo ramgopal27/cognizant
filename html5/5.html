@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Local Community Event Portal</title>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to the Local Community Event Portal</h1>
+      <p>
+        Join us for exciting events in your local community! Don't miss out on
+        the fun and opportunities to connect with others.
+      </p>
+    </div>
+    <form onsubmit="showConfirmation();">
+      <label
+        >Name:
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your name"
+          autofocus /></label
+      ><br />
+      <label
+        >Email:
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Your email" /></label
+      ><br />
+      <label>Date: <input type="date" name="eventDate" /></label><br />
+      <label
+        >Event Type:
+        <select name="eventType" id="eventType">
+          <option value="music">Music</option>
+          <option value="art">Art</option>
+          <option value="tech">Tech</option>
+        </select> </label
+      ><br />
+      <label>Message: <textarea placeholder="Any comments..."></textarea></label
+      ><br />
+      <button type="submit">Register</button>
+      <output id="confirmation"></output>
+    </form>
+
+    <script>
+      function showConfirmation() {
+        document.getElementById("confirmation").value =
+          "Thank you for registering!";
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: black;
+        color: green;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        background-color: black;
+        color: green;
+        padding: 40px;
+        width: 400px;
+        height: 350px;
+      }
+      label {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: green;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin: 0 30px;
+      }
+      output {
+        display: block;
+        margin-top: 20px;
+        color: yellow;
+      }
+      input,
+      textarea,
+      select {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid green;
+        border-radius: 4px;
+        background-color: black;
+        color: green;
+      }
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        border-color: green;
+        border-width: 3px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: green;
+      }
+      button:hover {
+        background-color: black;
+        color: green;
+        border: 1px solid green;
+      }
+      div {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: green;
+      }
+      p {
+        color: green;
+      }
+    </style>
+  </body>
+</html>
